@@ -1,22 +1,21 @@
 import EmployeesListItem from '../employees-list-item/employees-list-item';
 import './employees-list.css';
 
-
-const EmployeesList = ({data, onDelete}) => { //data = [{name: '', salary: , increase: , id:}, { }, { }]
+const EmployeesList = ({data, onDelete, onToggleIncrease, onToggleRise}) => { 
 
   const elements = data.map(item => { 
-    //item = {name: '', salary: , increase, id: } every time new object = item
-
-    const {id, ...itemProps} = item; //частичная деструктуризация, из id вытаск id, name, salary, increase идут в ...itemProps
+    
+    const {id, ...itemProps} = item; // partial destructuring
     return (
-      //<EmployeesListItem name = {item.name} salary = {item.salary} increase = {item.increase}/> the same as
-
       <EmployeesListItem key = {id} 
                          {...itemProps} 
-                         onDelete = {() =>onDelete(id)} //create next property 
+                         onDelete = {() => onDelete(id)} 
+                         onToggleIncrease = {() => onToggleIncrease(id)} 
+                         onToggleRise = {() => onToggleRise(id)}
                          />
     )
   });
+  
   return (
     <ul className="app-list list-group">
         {elements}

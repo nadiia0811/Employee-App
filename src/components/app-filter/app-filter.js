@@ -10,7 +10,7 @@ const AppFilter = (props) => {
     ];
 
     const buttons = buttonsData.map(({name, label}) => {
-        const active = props.filter === name; // active - is button active?
+        const active = props.filter === name; 
         const clazz = active ? 'btn-light' : 'btn-outline-light';
         return (
             <button  className = {`btn ${clazz}`}
@@ -20,15 +20,13 @@ const AppFilter = (props) => {
             {label}
             </button>
         )
-    }
-    )
+    })
+    
     return (
         <div className="btn-group">  
            {buttons}
         </div>
-
     );
-
 };
 
 

@@ -12,7 +12,7 @@ class EmployeesAddForm extends React.Component {
     }
 }
 
-onValueChange = (e) => {  // when user add some value to input field
+onValueChange = (e) => {  
   this.setState({
     [e.target.name]: e.target.value,
     
@@ -45,7 +45,7 @@ render(){
             <input type="text"
                    className="form-control new-post-label"
                    placeholder="Employee name?" 
-                   name = "name" // e.target.name = "name"
+                   name = "name" 
                    onChange = {this.onValueChange} 
                    value = {name}
             />
@@ -53,7 +53,7 @@ render(){
             <input type="number"
                    className="form-control new-post-label"
                    placeholder="Salary in $?" 
-                   name = "salary"//  e.target.name = "salary"
+                   name = "salary"
                    onChange = {this.onValueChange}  
                    value = {salary}
              />

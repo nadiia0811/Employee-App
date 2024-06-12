@@ -5,7 +5,7 @@ const EmployeesList = ({data, onDelete, onToggleIncrease, onToggleRise}) => {
 
   const elements = data.map(item => { 
     
-    const {id, ...itemProps} = item; // partial destructuring
+    const {id, ...itemProps} = item; 
     return (
       <EmployeesListItem key = {id} 
                          {...itemProps} 

@@ -1,4 +1,20 @@
 # Employee-App
 
-A simple app written in React. Allows you to understand how the state works, the properties of the component, the transfer of properties and methods through the hierarchy.
-Counts the total number of employees dynamically. You can find an employee by letter, substring or string. If you click on the name of an employee, an asterisk will appear, which means that the employee will be promoted. You can delete an employee using the shopping cart button, add a new employee using the form, and also filter depending on the salary and the presence of an asterisk
+1. Purpose and Learning Goals
+- A simple React app designed to help users understand core React concepts:
+  - State management
+  - Component properties
+  - Passing props and methods through component hierarchy
+    
+2. Features and Functionalities:
+- Employee List:
+  - Displays a dynamic total count of employees.
+  - Allows searching for an employee by typing a letter, substring, or full string.
+- Employee Interactions:
+  - Promote Employees: Click on an employee’s name to add an asterisk, marking them for promotion.
+  - Delete Employees: Use the trash icon to remove an employee from the list.
+- Add New Employee:
+  - Includes a form where users can add new employees to the list.
+-Filtering Options:
+  - Filter employees based on salary levels.
+  - Filter by the presence of an asterisk (promoted status).
